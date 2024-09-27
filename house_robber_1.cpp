@@ -2,6 +2,10 @@
 
 using namespace std;
 
+// Declate base case
+// Express all states in base case
+// copy the recurrance and write in the loop 
+
 class Solution {
 public:
     // Recursion Solution
