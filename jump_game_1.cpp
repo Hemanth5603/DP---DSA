@@ -1,5 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
+
+
+
 class Solution {
 public:
     bool function(int index, int &n, vector<int>& nums, vector<int>& dp)
@@ -7,7 +10,7 @@ public:
         if (index >= n - 1) {
             return true;
         }
-        
+
         if (dp[index] != -1){
             return dp[index];
         }
@@ -15,8 +18,7 @@ public:
         int maxJump = nums[index];
         for (int i = 1; i <= maxJump; i++) 
         {
-            if (function(index + i, n, nums, dp)) 
-            {
+            if (function(index + i, n, nums, dp)){
                 return dp[index] = true;
             }
         }
